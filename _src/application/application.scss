@@ -64,6 +64,11 @@ body {
 .landscape-page {
   width: calc(100% + 240px);
   margin-left: -120px;
+  @media screen and (max-width: 1056px) {
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .page-list {
