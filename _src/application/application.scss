@@ -61,6 +61,11 @@ body {
 
 }
 
+.landscape-page {
+  width: calc(100% + 240px);
+  margin-left: -120px;
+}
+
 .page-list {
   display: flex;
   justify-content: space-between;
