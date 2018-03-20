@@ -1,4 +1,5 @@
 var menuToggle = document.querySelector('.hamburger');
+var clientTheme = document.querySelector('#client-theme');
 
 document.body.addEventListener('keydown', function(e) {
   if (e.keyCode === 27) {
@@ -22,7 +23,8 @@ menuToggle.addEventListener('click', function() {
 
 var cssClipboard = new Clipboard('#copyCSS', {
   text: function() {
-    return document.querySelector('#client-theme').innerHTML;
+    clientTheme = clientTheme.innerHTML.replace(/&gt;/g, '>');
+    return clientTheme.replace('\n\n/*# sourceMappingURL=client-theme.css.map */', '');
   }
 });
 
