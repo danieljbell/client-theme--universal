@@ -1,7 +1,7 @@
 /*
-=================================================================
-GITHUB REPO: https://github.com/danieljbell/client-theme-template
-=================================================================
+===================================================================
+GITHUB REPO: https://github.com/danieljbell/client-theme--universal
+===================================================================
 */
 .nbcuniversal-hero { position: relative; left: -30px; top: -20px; width: calc(100% + 60px); padding: 20px 30px; z-index: 0; -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8); box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8); background-size: cover; background-position: center; }
 .nbcuniversal-hero img { width: 100%; display: block; max-width: 200px !important; -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5)); filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5)); }
