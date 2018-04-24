@@ -1,0 +1,106 @@
+.nbcuniversal-hero {
+  position: relative;
+  left: -30px;
+  top: -20px;
+  width: calc(100% + 60px);
+  padding: 20px 30px;
+  z-index: 0;
+  box-shadow: inset 0 0 50px rgba(black, 0.8);
+  background-size: cover;
+  background-position: center;
+  @include mobile {
+    padding-bottom: 50px;
+  }
+  @include print {
+    left: -0.5in;
+    top: -1in;
+    width: 8.5in;
+    padding: 0.25in 0.5in;
+    margin-bottom: -0.75in;
+  }
+
+  // &:after {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   background-color: #000;
+  //   opacity: 0.4;
+  //   z-index: -1;
+  // }
+
+  img {
+    width: 100%;
+    display: block;
+    max-width: 200px !important;
+    filter: drop-shadow(3px 3px 3px rgba(black, 0.5));
+    
+    @include mobile {
+      margin: 0 auto 1em;
+    }
+
+    @include print {
+      max-width: 1.5in !important;
+    }
+
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    
+    #content_editor &,
+    .pdf-page-content & {
+      font-size: 1.7em;
+      color: #fff !important;
+      text-shadow: 3px 3px 3px rgba(black, 0.5);
+    }
+    
+    @include mobile {
+      position: static;
+      top: auto;
+      right: auto;
+      transform: translateY(0);
+      text-align: center;
+      #content_editor &,
+      .pdf-page-content & {
+        font-size: 1.3em !important;
+        line-height: 1.2 !important;
+      }
+    }
+
+    @include print {
+      right: 0.5in;
+    }
+
+  }
+
+}
+
+.nbcuniversal-page--approval-letter p {
+  #content_editor &,
+  .pdf-page-content & {
+    font-size: $paragraph-font-size !important;
+    line-height: 1.4 !important;
+    margin-bottom: 1.2em !important;
+    @include print {
+      font-size: 10pt !important;
+      line-height: 1.2 !important;
+    }
+  }
+}
+
+.nbcuniversal-page--approval-letter {
+  page: approval-letter;
+}
+
+@page approval-letter {
+  margin-left: 0.5in;
+  margin-right: 0.5in;
+  margin-bottom: 0.2in;
+  min-height: 11in;
+}

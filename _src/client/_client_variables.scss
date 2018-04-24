@@ -12,7 +12,7 @@ $brand-three: $brand;    // Light Green
 $base-text-color: #2d3943;
 $base-heading-color: #2d3943;
 $base-link-color: $brand-two;
-$base-font-family: 'Source Sans Pro';
+$base-font-family: alright_sansregular,Arial,Helvetica,sans-serif;
 
 // =================================
 // THEME BUILDER ADVANCED TYPOGRAPHY
@@ -75,10 +75,10 @@ $heading-six-margin: 0 0 4px 0;
 // PARAGRAPH
 $paragraph-text-color: $base-text-color;
 $paragraph-font-family: $base-font-family;
-$paragraph-font-size: 18px;
-$paragraph-line-height: 24px;
-$paragraph-font-weight: 300;
-$paragraph-margin: 0 0 20px 0;
+$paragraph-font-size: 16px;
+$paragraph-line-height: 22px;
+$paragraph-font-weight: 400;
+$paragraph-margin: 0 0 22px 0;
 
 
 // LINK

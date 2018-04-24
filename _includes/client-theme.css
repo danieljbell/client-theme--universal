@@ -3,34 +3,25 @@
 GITHUB REPO: https://github.com/danieljbell/client-theme-template
 =================================================================
 */
-.client-name-has-text-white { color: #fff !important; }
-.client-name-has-text-brand-two { color: #8064A9 !important; }
-.client-name-pad-y { padding-top: 30px !important; padding-bottom: 30px !important; }
-.client-name-pad-y-more { padding-top: 60px !important; padding-bottom: 60px !important; }
-.client-name-pad-t { padding-top: 30px !important; }
-.client-name-pad-t-more { padding-top: 60px !important; }
-.client-name-pad-b { padding-bottom: 30px !important; }
-.client-name-pad-b-more { padding-bottom: 60px !important; }
-.client-name-pad-x { padding-left: 30px !important; padding-right: 30px !important; }
-.client-name-pad-x-more { padding-left: 60px !important; padding-right: 60px !important; }
-.client-name-pad-l { padding-left: 30px !important; }
-.client-name-pad-l-more { padding-left: 60px !important; }
-.client-name-pad-r { padding-right: 30px !important; }
-.client-name-pad-r-more { padding-right: 60px !important; }
-.client-name-mar-y { margin-top: 30px !important; margin-bottom: 30px !important; }
-.client-name-mar-y-more { margin-top: 60px !important; margin-bottom: 60px !important; }
-.client-name-mar-t { margin-top: 30px !important; }
-.client-name-mar-t-more { margin-top: 60px !important; }
-.client-name-mar-b { margin-bottom: 30px !important; }
-.client-name-mar-b-more { margin-bottom: 60px !important; }
-.client-name-mar-b-neg { margin-bottom: -30px !important; }
-.client-name-mar-x { margin-left: 30px !important; margin-right: 30px !important; }
-.client-name-mar-x-more { margin-left: 60px !important; margin-right: 60px !important; }
-.client-name-mar-l { margin-left: 30px !important; }
-.client-name-mar-l-more { margin-left: 60px !important; }
-.client-name-mar-r { margin-right: 30px !important; }
-.client-name-mar-r-more { margin-right: 60px !important; }
-.client-name-b-a { border: 1px solid #fff; }
-@media screen and (max-width: 568px) { .client-name-mar-x { margin-left: 0px !important; margin-right: 0px !important; } }
+.nbcuniversal-hero { position: relative; left: -30px; top: -20px; width: calc(100% + 60px); padding: 20px 30px; z-index: 0; -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8); box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8); background-size: cover; background-position: center; }
+.nbcuniversal-hero img { width: 100%; display: block; max-width: 200px !important; -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5)); filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5)); }
+.nbcuniversal-hero h1 { position: absolute; top: 50%; right: 30px; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
+#content_editor .nbcuniversal-hero h1, .pdf-page-content .nbcuniversal-hero h1 { font-size: 1.7em; color: #fff !important; text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }
+#content_editor .nbcuniversal-page--approval-letter p, .pdf-page-content .nbcuniversal-page--approval-letter p { font-size: 16px !important; line-height: 1.4 !important; margin-bottom: 1.2em !important; }
+.nbcuniversal-page--approval-letter { page: approval-letter; }
+@page approval-letter { margin-left: 0.5in;
+  margin-right: 0.5in;
+  margin-bottom: 0.2in;
+  min-height: 11in; }
+.nbcuniversal-approval-letter-meta { background-color: #f0f0f0; float: right; width: 100%; max-width: 250px; padding: 24px; border: 1px solid #ccc; border-radius: 4px; position: relative; top: -44px; -webkit-box-shadow: 0 4px 35px rgba(0, 0, 0, 0.2); box-shadow: 0 4px 35px rgba(0, 0, 0, 0.2); margin-left: 48px; }
+#content_editor .nbcuniversal-approval-letter-meta p, .pdf-page-content .nbcuniversal-approval-letter-meta p { font-size: 12.8px !important; margin-bottom: 8px !important; }
+#content_editor .nbcuniversal-approval-letter-meta *:last-child, .pdf-page-content .nbcuniversal-approval-letter-meta *:last-child { margin-bottom: 0; }
+.nbcuniversal-approval-letter-footer { background-color: #353535; position: relative; left: -30px; width: calc(100% + 60px); padding: 20px 30px; margin-bottom: -20px; }
+#content_editor .nbcuniversal-approval-letter-footer, .pdf-page-content .nbcuniversal-approval-letter-footer { color: #cccccc; }
+#content_editor .nbcuniversal-approval-letter-footer a, .pdf-page-content .nbcuniversal-approval-letter-footer a { color: #cccccc; }
+#content_editor .nbcuniversal-approval-letter-footer p, .pdf-page-content .nbcuniversal-approval-letter-footer p { text-align: center; font-size: 11.2px !important; line-height: 1.4; color: #cccccc; margin-bottom: 0 !important; }
+@media screen and (max-width: 735px) { .nbcuniversal-hero { padding-bottom: 50px; } .nbcuniversal-hero img { margin: 0 auto 1em; } .nbcuniversal-hero h1 { position: static; top: auto; right: auto; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); text-align: center; }
+  #content_editor .nbcuniversal-hero h1, .pdf-page-content .nbcuniversal-hero h1 { font-size: 1.3em !important; line-height: 1.2 !important; } .nbcuniversal-approval-letter-meta { float: none; max-width: unset; margin-left: 0; } }
+@media print { .nbcuniversal-hero { left: -0.5in; top: -1in; width: 8.5in; padding: 0.25in 0.5in; margin-bottom: -0.75in; } .nbcuniversal-hero img { max-width: 1.5in !important; } .nbcuniversal-hero h1 { right: 0.5in; } #content_editor .nbcuniversal-page--approval-letter p, .pdf-page-content .nbcuniversal-page--approval-letter p { font-size: 10pt !important; line-height: 1.2 !important; } .nbcuniversal-approval-letter-footer { position: absolute; bottom: 0; left: -0.5in; width: 8.5in; } #content_editor .nbcuniversal-approval-letter-footer p, .pdf-page-content .nbcuniversal-approval-letter-footer p { font-size: 8pt !important; } }
 
 /*# sourceMappingURL=client-theme.css.map */

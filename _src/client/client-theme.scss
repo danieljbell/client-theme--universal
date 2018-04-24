@@ -7,6 +7,9 @@ GITHUB REPO: https://github.com/danieljbell/client-theme-template
 =================================================================
 */
 
+@import './modules/hero';
+@import './modules/approval-letter-meta';
+@import './modules/approval-letter-footer';
 
-@import './_overrides';
-@import './_utilities';
+// @import './_overrides';
+// @import './_utilities';
